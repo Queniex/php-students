@@ -104,6 +104,7 @@ if( isset($_POST["login"]) ) {
          @layer base {
           *{
             font-family: 'Poppins', sans-serif;
+            color: black;
           }
          }
 
@@ -122,8 +123,8 @@ if( isset($_POST["login"]) ) {
         <?php if( isset($error) ) : ?>
           <p style="color: red; font-style: italic;">Password / Username is incorrect!</p>
         <?php endif; ?>
-        
-            <div class="absolute left-0 -top-7 lg:-top-[34px] font-bold text-2xl lg:text-4xl">USER LOGIN💡</div>
+
+            <div class="absolute left-0 -top-7 lg:-top-[34px] font-bold text-2xl lg:text-4xl">USER LOGIN</div>
             <div class="absolute left-0 -bottom-7 lg:-bottom-9 text-[12px] lg:text-xl">
               <span class="underline">Don't have an account?</span><a class="no-underline text-[#516390] font-bold hover:text-[#2F3951]" href="regist.php"> Sign up</a>
             </div>
@@ -146,7 +147,7 @@ if( isset($_POST["login"]) ) {
                     
                     <li class="flex items-center justify-center m-2">
                         <div class="w-28 items-center justify-center flex bg-[#7C74AB] rounded-2xl text-white hover:bg-[#5E5880] hover:cursor-pointer ">
-                            <button type="submit" name="login">Sign in</button>
+                            <button class="w-28" type="submit" name="login">Sign in</button>
                         </div>
                     </li>
                 </ul>
