@@ -116,14 +116,22 @@ if( isset($_POST["login"]) ) {
       </style>
 
 </head>
-    <body class="bg-[#EEF1FF] items-center w-full h-[100vh]">
-    <div class="container h-[100vh] flex items-center justify-center">
-        <div class="bg-[#BCB1FF] p-3 lg:p-8 lg:w-[700px] lg:h-80 flex items-center justify-center relative drop-shadow-lg">
+    <body class="bg-[#EEF1FF] items-center w-full h-[100vh] relative">
 
+        <!-- Warning -->
         <?php if( isset($error) ) : ?>
-          <p style="color: red; font-style: italic;">Password / Username is incorrect!</p>
+          <div class="absolute m-5 top-5">
+            <div class="alert alert-error shadow-lg p-0 lg:p-2 lg:w-full flex justify-center items-center">
+              <div class="m-0 p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 ml-1 lg:h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span>Password / Username is incorrect.</span>
+              </div>
+            </div>
+          </div>
         <?php endif; ?>
 
+    <div class="container h-[100vh] flex items-center justify-center">
+        <div class="bg-[#BCB1FF] p-3 lg:p-8 lg:w-[700px] lg:h-80 flex items-center justify-center relative drop-shadow-lg">
             <div class="absolute left-0 -top-7 lg:-top-[34px] font-bold text-2xl lg:text-4xl">USER LOGIN</div>
             <div class="absolute left-0 -bottom-7 lg:-bottom-9 text-[12px] lg:text-xl">
               <span class="underline">Don't have an account?</span><a class="no-underline text-[#516390] font-bold hover:text-[#2F3951]" href="regist.php"> Sign up</a>
