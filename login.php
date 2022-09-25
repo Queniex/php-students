@@ -1,5 +1,5 @@
 <?php
-require 'functions.php';
+require 'dist/crud/functions.php';
 session_start();
 
 if( isset($_COOKIE['id']) && isset($_COOKIE['key']) ) {
@@ -116,24 +116,37 @@ if( isset($_POST["login"]) ) {
 
 </head>
 <body>
+    
+    <h1>Login Page</h1>
 
-    <!-- Header Start -->
-    <header >
-      
-    </header>
-    <!-- Header End -->
+    <?php if( isset($error) ) : ?>
+       <p style="color: red; font-style: italic;">Password / Username is incorrect!</p>
+    <?php endif; ?>
 
-    <!-- Hero Section Start -->
-    <section >
-        
-    </section>
-    <!-- Hero Section End -->
+    <form action="" method="post">
 
-    <!-- Experience Section Start -->
-    <section >
-      
-    </section>
-    <!-- Skill Section End -->
+        <ul>
+            <li>
+                <label class="2" for="username">Username : </label>
+                <input type="username" name="username" id="username">
+            </li>
+
+            <li>
+                <label class="2" for="password">Password : </label>
+                <input type="password" name="password" id="password">
+            </li>
+
+            <li>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember me : </label>
+            </li>
+            
+            <li>
+                <button type="submit" name="login">login</button>
+            </li>
+        </ul>
+
+    </form>
 
 </body>
 </html>
