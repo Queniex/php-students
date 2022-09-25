@@ -115,12 +115,14 @@ if( isset($_POST["login"]) ) {
       </style>
 
 </head>
-<?php if( isset($error) ) : ?>
-       <p style="color: red; font-style: italic;">Password / Username is incorrect!</p>
-    <?php endif; ?>
     <body class="bg-[#EEF1FF] items-center w-full h-[100vh]">
     <div class="container h-[100vh] flex items-center justify-center">
         <div class="bg-[#BCB1FF] p-3 lg:p-8 lg:w-[700px] lg:h-80 flex items-center justify-center relative drop-shadow-lg">
+
+        <?php if( isset($error) ) : ?>
+          <p style="color: red; font-style: italic;">Password / Username is incorrect!</p>
+        <?php endif; ?>
+        
             <div class="absolute left-0 -top-7 lg:-top-[34px] font-bold text-2xl lg:text-4xl">USER LOGIN💡</div>
             <div class="absolute left-0 -bottom-7 lg:-bottom-9 text-[12px] lg:text-xl">
               <span class="underline">Don't have an account?</span><a class="no-underline text-[#516390] font-bold hover:text-[#2F3951]" href="regist.php"> Sign up</a>
