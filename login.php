@@ -115,38 +115,41 @@ if( isset($_POST["login"]) ) {
       </style>
 
 </head>
-<body>
-    
-    <h1>Login Page</h1>
-
-    <?php if( isset($error) ) : ?>
+<?php if( isset($error) ) : ?>
        <p style="color: red; font-style: italic;">Password / Username is incorrect!</p>
     <?php endif; ?>
-
-    <form action="" method="post">
-
-        <ul>
-            <li>
-                <label class="2" for="username">Username : </label>
-                <input type="username" name="username" id="username">
-            </li>
-
-            <li>
-                <label class="2" for="password">Password : </label>
-                <input type="password" name="password" id="password">
-            </li>
-
-            <li>
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Remember me : </label>
-            </li>
-            
-            <li>
-                <button type="submit" name="login">login</button>
-            </li>
-        </ul>
-
-    </form>
-
+    <body class="bg-[#EEF1FF] items-center w-full h-[100vh]">
+    <div class="container h-[100vh] flex items-center justify-center">
+        <div class="bg-[#BCB1FF] p-3 lg:p-8 lg:w-[700px] lg:h-80 flex items-center justify-center relative drop-shadow-lg">
+            <div class="absolute left-0 -top-7 lg:-top-[34px] font-bold text-2xl lg:text-4xl">USER LOGIN💡</div>
+            <div class="absolute left-0 -bottom-7 lg:-bottom-9 text-[12px] lg:text-xl">
+              <span class="underline">Don't have an account?</span><a class="no-underline text-[#516390] font-bold hover:text-[#2F3951]" href="regist.php"> Sign up</a>
+            </div>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label class="2 block text-white font-thin" for="username">Username : </label>
+                        <input class="bg-[#D9D9D9]" type="username" name="username" id="username">
+                    </li>
+        
+                    <li class="mt-2">
+                        <label class="2 block text-white font-thin" for="password">Password : </label>
+                        <input class="bg-[#D9D9D9]" type="password" name="password" id="password">
+                    </li>
+        
+                    <li class="mt-2">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label class="text-white font-thin" for="remember">Remember me </label>
+                    </li>
+                    
+                    <li class="flex items-center justify-center m-2">
+                        <div class="w-28 items-center justify-center flex bg-[#7C74AB] rounded-2xl text-white hover:bg-[#5E5880] hover:cursor-pointer ">
+                            <button type="submit" name="login">Sign in</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
