@@ -57,8 +57,6 @@ if( isset($_POST["login"]) ) {
 
     $error = true;
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -67,49 +65,75 @@ if( isset($_POST["login"]) ) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <style>
-        label.2{
-            display : block;
+    <title>Students - DB</title>
+
+    <!-- Link daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.2/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+              center: true,
+              padding: '16px'
+            },
+            extend: {
+              colors: {
+                primary: '#14b8a6',
+              },
+              screens: {
+                '2xl': '1320px',
+              }
+            }
+          }
         }
-        ul li{
-            list-style-type: none;
-            margin-bottom: 4px;
+      </script>
+
+      <style type="text/tailwindcss">
+        /* import font */
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Dosis:wght@500&family=Luckiest+Guy&family=Poppins:ital,wght@0,300;0,500;0,600;0,800;0,900;1,600&display=swap');
+
+        @layer utilities {
+         .hamburger-active > span:nth-child(1){
+           @apply rotate-45;
+         }
+
+         @layer base {
+          *{
+            font-family: 'Poppins', sans-serif;
+          }
+         }
+
+        /* *{
+          border: 1px solid blue
+         } */
+
         }
-    </style>
+      </style>
+
 </head>
 <body>
-    
-    <h1>Login Page</h1>
 
-    <?php if( isset($error) ) : ?>
-       <p style="color: red; font-style: italic;">Password / Username is incorrect!</p>
-    <?php endif; ?>
+    <!-- Header Start -->
+    <header >
+      
+    </header>
+    <!-- Header End -->
 
-    <form action="" method="post">
+    <!-- Hero Section Start -->
+    <section >
+        
+    </section>
+    <!-- Hero Section End -->
 
-        <ul>
-            <li>
-                <label class="2" for="username">Username : </label>
-                <input type="username" name="username" id="username">
-            </li>
-
-            <li>
-                <label class="2" for="password">Password : </label>
-                <input type="password" name="password" id="password">
-            </li>
-
-            <li>
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Remember me : </label>
-            </li>
-            
-            <li>
-                <button type="submit" name="login">login</button>
-            </li>
-        </ul>
-
-    </form>
+    <!-- Experience Section Start -->
+    <section >
+      
+    </section>
+    <!-- Skill Section End -->
 
 </body>
 </html>
