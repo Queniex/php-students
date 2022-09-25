@@ -56,32 +56,6 @@
 </head>
 <body>
 
-    <!-- Header Start -->
-    <header >
-      
-    </header>
-    <!-- Header End -->
 
-    <!-- Hero Section Start -->
-    <section >
-        
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Experience Section Start -->
-    <section >
-      
-    </section>
-    <!-- Skill Section End -->
-
-    <script src="dist/js/script.js"></script>
-    <!-- <script src="dist/js/jquery-3.6.1.min.js"></script>
-    <script>
-      $(document).ready(function(){
-            $('a.xd').click(function(e){
-              e.preventDefault()
-            })
-        })
-    </script> -->
 </body>
 </html>
