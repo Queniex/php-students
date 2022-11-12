@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - DB</title>
+
+    <!-- Link daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.2/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+              center: true,
+              padding: '16px'
+            },
+            extend: {
+              colors: {
+                primary: '#14b8a6',
+              },
+              screens: {
+                '2xl': '1320px',
+              }
+            }
+          }
+        }
+      </script>
+
+      <style type="text/tailwindcss">
+        /* import font */
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Dosis:wght@500&family=Luckiest+Guy&family=Poppins:ital,wght@0,300;0,500;0,600;0,800;0,900;1,600&display=swap');
+
+        @layer utilities {
+         .hamburger-active > span:nth-child(1){
+           @apply rotate-45;
+         }
+
+         @layer base {
+          *{
+            font-family: 'Poppins', sans-serif;
+            color: black;
+          }
+         }
+
+        /* *{
+          border: 1px solid blue
+         } */
+
+        }
+      </style>
+
+</head>
+    <body class="bg-[#EEF1FF] items-center w-full h-[100vh] relative">
+
+        <!-- Warning -->
+        <?php if( isset($error) ) : ?>
+          <div class="absolute m-5 top-5">
+            <div class="alert alert-error shadow-lg p-0 lg:p-2 lg:w-full flex justify-center items-center">
+              <div class="m-0 p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 ml-1 lg:h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span>Password / Username is incorrect.</span>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
+
+    <div class="container h-[100vh] flex items-center justify-center">
+        <div class="bg-[#BCB1FF] p-3 lg:p-8 lg:w-[700px] lg:h-80 flex items-center justify-center relative drop-shadow-lg">
+            <div class="absolute left-0 -top-7 lg:-top-[34px] font-bold text-2xl lg:text-4xl">USER LOGIN</div>
+            <div class="absolute left-0 -bottom-7 lg:-bottom-9 text-[12px] lg:text-xl">
+              <span class="underline">Don't have an account?</span><a class="no-underline text-[#516390] font-bold hover:text-[#2F3951]" href="regist.php"> Sign up</a>
+            </div>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label class="2 block text-white font-thin" for="username">Username : </label>
+                        <input class="bg-[#D9D9D9]" type="username" name="username" id="username">
+                    </li>
+        
+                    <li class="mt-2">
+                        <label class="2 block text-white font-thin" for="password">Password : </label>
+                        <input class="bg-[#D9D9D9]" type="password" name="password" id="password">
+                    </li>
+        
+                    <li class="mt-2">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label class="text-white font-thin" for="remember">Remember me </label>
+                    </li>
+                    
+                    <li class="flex items-center justify-center m-2">
+                        <div class="w-28 items-center justify-center flex bg-[#7C74AB] rounded-2xl text-white hover:bg-[#5E5880] hover:cursor-pointer ">
+                            <button class="w-28" type="submit" name="login">Sign in</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
