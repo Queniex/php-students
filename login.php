@@ -116,10 +116,10 @@ if( isset($_POST["login"]) ) {
       </style>
 
 </head>
-    <body class="bg-[#EEF1FF] items-center w-full h-[100vh] relative">
+    <body class="items-center w-full h-[100vh] relative bg-[black]">
 
         <!-- Warning -->
-        <?php if( isset($error) ) : ?>
+        <!-- <?php if( isset($error) ) : ?> -->
           <div class="absolute m-5 top-5">
             <div class="alert alert-error shadow-lg p-0 lg:p-2 lg:w-full flex justify-center items-center">
               <div class="m-0 p-0">
@@ -128,38 +128,44 @@ if( isset($_POST["login"]) ) {
               </div>
             </div>
           </div>
-        <?php endif; ?>
+        <!-- <?php endif; ?> -->
 
     <div class="container h-[100vh] flex items-center justify-center">
-        <div class="bg-[#BCB1FF] p-3 lg:p-8 lg:w-[700px] lg:h-80 flex items-center justify-center relative drop-shadow-lg">
-            <div class="absolute left-0 -top-7 lg:-top-[34px] font-bold text-2xl lg:text-4xl">USER LOGIN</div>
-            <div class="absolute left-0 -bottom-7 lg:-bottom-9 text-[12px] lg:text-xl">
-              <span class="underline">Don't have an account?</span><a class="no-underline text-[#516390] font-bold hover:text-[#2F3951]" href="regist.php"> Sign up</a>
+        <div class="mt-5 h-[60%] w-[80%] flex">
+            <div class="h-[100%] rounded-l-3xl flex-[1.4] w-32 bg-[#FFACC7] container flex items-center justify-center">
+                <div class="h-[90%] w-[95%]">
+                        <center>
+                            <h1 class="mt-14 mb-3 font-bold text-[24px] text-white underline decoration-white underline-offset-8 ">USER LOGIN</h1>
+                            <form action=""></form>
+                            <div class="h-[20%]">
+                                <input type="text" name="" class="border-solid border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required>
+                            </div>
+                            <div class="h-[20%]">
+                                <input type="password" name="" class="border-solid border-2 border-black w-[60%] h-8 mt-3"  placeholder=" Password" required>
+                            </div>
+                        
+                            <div class="h-[10%] w-[60%] mt-3 container flex justify-start">
+                                <div class="-ml-4">
+                                    <input type="checkbox">
+                                    <span>Remember Me</span>
+                                </div>
+                            </div>
+                        
+                            <div class="h-[15%]">
+                                <button class="border-solid border-2 border-black h-10 mt-4 w-[40%] rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white">Sign In</button>
+                            </div>
+                        </center>
+                </div>
+                
             </div>
-            <form action="" method="post">
-                <ul>
-                    <li>
-                        <label class="2 block text-white font-thin" for="username">Username : </label>
-                        <input class="bg-[#D9D9D9]" type="username" name="username" id="username">
-                    </li>
-        
-                    <li class="mt-2">
-                        <label class="2 block text-white font-thin" for="password">Password : </label>
-                        <input class="bg-[#D9D9D9]" type="password" name="password" id="password">
-                    </li>
-        
-                    <li class="mt-2">
-                        <input type="checkbox" name="remember" id="remember">
-                        <label class="text-white font-thin" for="remember">Remember me </label>
-                    </li>
-                    
-                    <li class="flex items-center justify-center m-2">
-                        <div class="w-28 items-center justify-center flex bg-[#7C74AB] rounded-2xl text-white hover:bg-[#5E5880] hover:cursor-pointer ">
-                            <button class="w-28" type="submit" name="login">Sign in</button>
-                        </div>
-                    </li>
-                </ul>
-            </form>
+            <div class="h-[100%] rounded-r-3xl flex-1 w-72 bg-white">
+                <div class="h-[80%] ml-5 mr-5">
+                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/word.png" alt="">
+                </div>
+                <div class="h-[20%] ml-5 mr-5 flex items-center justify-center">
+                    <button class="border-solid border-2 border-black h-10 w-28 rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white">Sign Up</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
