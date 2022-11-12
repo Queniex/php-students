@@ -138,21 +138,21 @@ if( isset($_POST["login"]) ) {
                             <h1 class="mt-14 mb-3 font-bold text-[24px] text-white underline decoration-white underline-offset-8 ">USER LOGIN</h1>
                             <form action=""></form>
                             <div class="h-[20%]">
-                                <input type="text" name="" class="border-solid border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required>
+                                <input type="text" class="border-solid border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required type="username" name="username" id="username">
                             </div>
                             <div class="h-[20%]">
-                                <input type="password" name="" class="border-solid border-2 border-black w-[60%] h-8 mt-3"  placeholder=" Password" required>
+                                <input type="password" class="border-solid border-2 border-black w-[60%] h-8 mt-3"  placeholder=" Password" required type="password" name="password" id="password">
                             </div>
                         
                             <div class="h-[10%] w-[60%] mt-3 container flex justify-start">
                                 <div class="-ml-4">
-                                    <input type="checkbox">
+                                    <input type="checkbox" name="remember" id="remember">
                                     <span>Remember Me</span>
                                 </div>
                             </div>
                         
                             <div class="h-[15%]">
-                                <button class="border-solid border-2 border-black h-10 mt-4 w-[40%] rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white">Sign In</button>
+                                <button class="border-solid border-2 border-black h-10 mt-4 w-[40%] rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white" type="submit" name="login">Sign In</button>
                             </div>
                         </center>
                 </div>
@@ -163,7 +163,7 @@ if( isset($_POST["login"]) ) {
                     <img style='height: 100%; width: 100%; object-fit: contain' src="images/word.png" alt="">
                 </div>
                 <div class="h-[20%] ml-5 mr-5 flex items-center justify-center">
-                    <button class="border-solid border-2 border-black h-10 w-28 rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white">Sign Up</button>
+                    <button class="border-solid border-2 border-black h-10 w-28 rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white"><a href="regist.php">Sign Up</a></button>
                 </div>
             </div>
         </div>
