@@ -136,7 +136,7 @@ if( isset($_POST["login"]) ) {
                 <div class="h-[90%] w-[95%]">
                         <center>
                             <h1 class="mt-14 mb-3 font-bold text-[24px] text-white underline decoration-white underline-offset-8 ">USER LOGIN</h1>
-                            <form action=""></form>
+                        <form action="">
                             <div class="h-[20%]">
                                 <input type="text" class="border-solid border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required type="username" name="username" id="username">
                             </div>
@@ -154,18 +154,19 @@ if( isset($_POST["login"]) ) {
                             <div class="h-[15%]">
                                 <button class="border-solid border-2 border-black h-10 mt-4 w-[40%] rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white" type="submit" name="login">Sign In</button>
                             </div>
+                        </form>
                         </center>
                 </div>
                 
             </div>
-            <div class="h-[100%] rounded-r-3xl flex-1 w-72 bg-white">
-                <div class="h-[80%] ml-5 mr-5">
-                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/word.png" alt="">
+                <div class="h-[100%] rounded-r-3xl flex-1 w-72 bg-white">
+                    <div class="h-[80%] ml-5 mr-5">
+                        <img style='height: 100%; width: 100%; object-fit: contain' src="images/word.png" alt="">
+                    </div>
+                    <div class="h-[20%] ml-5 mr-5 flex items-center justify-center">
+                      <a class="border-solid border-2 border-black rounded-3xl bg-[#AAEEEA] hover:bg-[#4C6D6B] text-black hover:text-white p-2" href="regist.php">Sign Up</a>
+                    </div>
                 </div>
-                <div class="h-[20%] ml-5 mr-5 flex items-center justify-center">
-                  <a class="border-solid border-2 border-black rounded-3xl bg-[#AAEEEA] hover:bg-[#4C6D6B] text-black hover:text-white p-2" href="regist.php">Sign Up</a>
-                </div>
-            </div>
         </div>
     </div>
 </body>
