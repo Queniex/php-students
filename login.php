@@ -136,7 +136,7 @@ if( isset($_POST["login"]) ) {
                 <div class="h-[90%] w-[95%]">
                         <center>
                             <h1 class="mt-14 mb-3 font-bold text-[24px] text-white underline decoration-white underline-offset-8 ">USER LOGIN</h1>
-                        <form action="">
+                        <form method="POST">
                             <div class="h-[20%]">
                                 <input type="text" class="border-solid border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required type="username" name="username" id="username">
                             </div>
