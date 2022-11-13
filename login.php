@@ -163,7 +163,7 @@ if( isset($_POST["login"]) ) {
                     <img style='height: 100%; width: 100%; object-fit: contain' src="images/word.png" alt="">
                 </div>
                 <div class="h-[20%] ml-5 mr-5 flex items-center justify-center">
-                    <button class="border-solid border-2 border-black h-10 w-28 rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-white"><a href="regist.php">Sign Up</a></button>
+                  <a class="border-solid border-2 border-black rounded-3xl bg-[#AAEEEA] hover:bg-[#4C6D6B] text-black hover:text-white p-2" href="test2.html">Sign Up</a>
                 </div>
             </div>
         </div>
