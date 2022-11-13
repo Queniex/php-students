@@ -7,7 +7,7 @@
         echo "
             <script>
                 alert('user successfully added !')
-                document.location.href = 'regist.php'
+                document.location.href = 'login.php'
             </script>
        "; 
        } else {

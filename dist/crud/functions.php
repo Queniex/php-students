@@ -163,5 +163,6 @@ function regist($data) {
     // add password to db
     mysqli_query($conn, "INSERT INTO users VALUES('', '$username', '$password')");
 
+    return mysqli_affected_rows($conn);
 }
 ?>
