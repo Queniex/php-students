@@ -108,20 +108,20 @@
                     <div class="h-[90%] w-[95%]">
                         <center>
                             <h1 class="mb-2 text-white">.</h1>
-                            <form action=""></form>
+                            <form action="">
 
                             <div class="h-[20%]">
-                                <input type="text" name="" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required>
+                                <input type="text" name="username" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required>
                             </div>
                             <div class="h-[20%]">
-                                <input type="password" name="" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3"  placeholder=" Password" required>
+                                <input type="password" name="password" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3"  placeholder=" Password" required>
                             </div>
                             <div class="h-[20%]">
-                                <input type="password" name="" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3 mb-5"  placeholder=" Confirm Password" required>
+                                <input type="password" name="password2" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3 mb-5"  placeholder=" Confirm Password" required>
                             </div>
                         
                             <div class="h-[15%]">
-                                <button class="border-solid border-2 border-black h-10 mt-3 w-[40%] rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-black hover:text-white" type="submit" name="login">Register</button>
+                                <button class="border-solid border-2 border-black h-10 mt-3 w-[40%] rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-black hover:text-white" type="submit" name="register">Register</button>
                             </div>
                             </form>
                         </center>
