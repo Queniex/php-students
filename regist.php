@@ -63,10 +63,11 @@
          @layer base {
           *{
             font-family: 'Poppins', sans-serif;
+            color: black;
           }
          }
-
-        /* *{
+/* 
+        *{
           border: 1px solid blue
          } */
 
@@ -74,35 +75,60 @@
       </style>
 
 </head>
-<body>
-    
-    <h1>Registration Page</h1>
+    <body class="items-center w-full h-[100vh] relative bg-[black]">
 
-    <form action="" method="POST">
+        <!-- Warning -->
+        <!-- <?php if( isset($error) ) : ?> -->
+          <div class="absolute m-5 top-5">
+            <div class="alert alert-error shadow-lg p-0 lg:p-2 lg:w-full flex justify-center items-center">
+              <div class="m-0 p-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 ml-1 lg:h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span>Password / Username is incorrect.</span>
+              </div>
+            </div>
+          </div>
+        <!-- <?php endif; ?> -->
 
-    <ul>
-        <li>
-            <label for="username">username : </label>
-            <input type="text" name="username" id="username">
-        </li>
-        
-        <li>
-            <label for="password">password :</label>
-            <input type="password" name="password" id="password">
-        </li>
-        
-        <li>
-            <label for="password2">Confirm your password : </label>
-            <input type="password" name="password2" id="password2">
-        </li>
-        
-        <li>
-            <button type="submit" name="register"> Register! </button> <br> <br>
-            <a href="login.php">Login</a>
-        </li>
-    </ul>
+    <div class="container h-[100vh] flex items-center justify-center">
+        <div class="mt-5 h-[60%] w-[60%] flex flex-row rounded-3xl bg-[#FFACC7]">
+            <div class="basis-2/5 rounded-l-3xl">
+                <div class=" ml-8 mt-3 h-[60%] w-[80%]">
+                    <h3 class="text-white mt-10 ml-3 text-3xl">REGISTER NEW</h3>
+                    <h3 class="text-white ml-3 text-3xl">ACCOUNT</h3>
+                    <div class="w-[84%] h-[3px] mt-1 bg-white ml-3"></div>
+                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/word.png" alt="">
+                </div>
+            </div>
+            <div class="basis-3/5 rounded-r-3xl">
+                <div class="ml-6 mt-[54px] h-[10%] w-[90%]">
+                    <div class="w-[70%] h-[100%] bg-white inline-block"></div>
+                    <div class="w-[20%] h-[100%] ml-9 bg-white inline-block"></div>
+                </div>
+                <div class="ml-6 mt-3 h-[68%] w-[90%] bg-white">
+                    <div class="h-[90%] w-[95%]">
+                        <center>
+                            <h1 class="mb-2 text-white">.</h1>
+                            <form action=""></form>
 
-    </form>
-
+                            <div class="h-[20%]">
+                                <input type="text" name="" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3" placeholder=" Username" required>
+                            </div>
+                            <div class="h-[20%]">
+                                <input type="password" name="" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3"  placeholder=" Password" required>
+                            </div>
+                            <div class="h-[20%]">
+                                <input type="password" name="" class="focus:ring focus:ring-violet-500 border-solid bg-[#FFACC7] text-white border-2 border-black w-[60%] h-8 mt-3 mb-7"  placeholder=" Confirm Password" required>
+                            </div>
+                        
+                            <div class="h-[15%]">
+                                <a class="border-solid border-2 border-black rounded-3xl bg-[#FF535C] hover:bg-[#A13339] text-black hover:text-white p-2" href="login.php">Register</a>
+                            </div>
+                            </form>
+                        </center>
+                </div>
+                </div>
+            </div>`
+        </div>
+    </div>
 </body>
 </html>
